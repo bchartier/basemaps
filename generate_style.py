@@ -980,7 +980,60 @@ vars= {
 }
 
 styles = {
-   'default': {},
+   'default': {
+   	'display_land': 1,
+   },
+   'overlay': {
+   	'display_land': 0,
+   	'display_landusage': None,
+	'land_clr': '"#B3C6D4"',
+	'motorway_clr': "253 146 58",
+	'trunk_clr': "255 195 69",
+	'primary_clr': {
+		0:'193 181 157', 
+		9:"255 253 139" 
+	},
+	'secondary_clr': { 
+		0:'193 181 157', 
+		10:"255 253 139" 
+	},
+	'tertiary_clr': {
+		0:'193 181 157',
+		12:"255 253 139"
+	},
+	'other_clr': { 
+		0:'193 181 157',
+		14:"255 255 255"
+	},
+	'display_towns': 1,
+	'display_villages': 1,
+	'display_hamlets': 1,
+	'village_lbl_size': {
+		0:0,
+		13:8
+	},
+	'village_buffer': 0,
+	'village_lbl_clr': {
+		0:'"#ffffff"',
+	},
+	'village_lbl_ol_clr': "0 0 0",
+	'town_lbl_clr': '"#ffffff"',
+	'town_lbl_ol_clr': "0 0 0",
+	'town_lbl_ol_width':2,
+	'town_ol_clr': "200 200 200",
+	'town_clr': "0 0 0",
+	'hamlet_lbl_clr': '"#ffffff"',
+	'hamlet_lbl_ol_clr': '"#000000"',
+	'display_buildings':0,
+	'label_buildings':0,
+	'display_aeroways':0,
+	'label_other_roads': {
+		0: 0,
+		17: 1,
+	},
+	'other_lbl_ol_clr': '"#000000"',
+	'other_lbl_clr': '"#ffffff"',
+   },
    'outlined':{
       'display_motorway_outline': {
          0:0,
@@ -1287,6 +1340,7 @@ style_aliases = {
    # map with no road casing and few colors, suited for using as a basemap when overlaying
    # other layers without risk of confusion between layers.
    "default":"default",
+   "overlay":"overlay",
 
    # a style resembling the google-maps theme
    "google":"default,outlined,google",

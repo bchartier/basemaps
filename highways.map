@@ -63,11 +63,13 @@ LAYER
            WIDTH _other_width
            OUTLINEWIDTH _other_ol_width
            OUTLINECOLOR _other_ol_clr
+	   OPACITY 30
         END
 #endif
         STYLE
             WIDTH _other_width
             COLOR _other_clr
+	    OPACITY 30
         END
 #if _label_other_roads == 1
         LABEL

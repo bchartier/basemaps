@@ -1,3 +1,4 @@
+#if _display_land == 1
 LAYER
    TYPE POLYGON
    STATUS ON
@@ -17,4 +18,4 @@ LAYER
        END
    END
 END
-
+#endif

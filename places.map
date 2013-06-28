@@ -153,7 +153,11 @@ LAYER
    MAXLENGTH 8
    ALIGN CENTER
    PARTIALS FALSE
+   #ifdef _village_buffer
+   BUFFER _village_buffer
+   #else
    BUFFER 4
+   #endif
    POSITION AUTO
    #if _display_village_symbol == 1
    STYLE
